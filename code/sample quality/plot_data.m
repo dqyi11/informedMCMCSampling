@@ -3,7 +3,7 @@ datahrs = datatesthrs;
 datahitnrun = datatesthitnrun;
 datarej = datatestrej;
 
-figure;
+figure(1);
 for i= 1:1:12
     subplot(4,3,i);
     boxplot([datahmc(:,i), datahrs(:,i), datahitnrun(:,i), datarej(:,i)],'labels',{'HMC','HRS','Hit&Run','Rejection'})
